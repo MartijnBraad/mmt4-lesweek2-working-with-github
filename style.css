@@ -1,0 +1,101 @@
+/*text*/
+h2 {
+    font-size: 2em;
+    color: red;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+
+/*Navigatie*/
+ul a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+li {
+    float : left;
+    line-height: 75px;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+header {
+    height: 75px;
+    background: red;
+}
+
+/*main*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 984px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+footer {
+    background: grey;
+}
+
+.kitten {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    float: left;
+    background-image: url(../img/kitten.jpg);
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clear { clear:both;}
+
+/*Accordion*/
+h3 {
+    color: grey;
+    margin-bottom: 1em;
+}
+
+div {
+    margin-bottom: 1em;
+}
+
+.ui-accordion-header-active{
+    color: black;
+}
+
+/*Responsive*/
+@media all and (max-width: 900px) {
+    html{
+        background: grey;
+    }
+    h3 {
+        color: white;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .kitten {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+}
+
+@media all and (max-width: 519px) {
+    .kitten {
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
