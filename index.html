@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>opdracht 1</title>
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#" id="blackHeading">h2 zwart</a></li>
+                    <li><a href="#" id="comicSans">Comic Sans</a></li>
+                    <li><a href="#" id="beep">Beep</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div id="accordion">
+                <h3>Section 1</h3>
+                <div>
+                  <p>
+                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                  </p>
+                </div>
+                <h3>Section 2</h3>
+                <div>
+                  <p>
+                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                  suscipit faucibus urna.
+                  </p>
+                </div>
+                <h3>Section 3</h3>
+                <div>
+                  <p>
+                  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                  </p>
+                </div>
+                <h3>Section 4</h3>
+                <div>
+                  <p>
+                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                  mauris vel est.
+                  </p>
+                </div>
+              </div>
+
+            <article>
+                <div class="header">
+                    <h2>Opdracht 1</h2>
+                </div>
+                    <p>Lorizzle ipsizzle shizzlin dizzle sit fo shizzle, consectetizzle mofo mah nizzle. Break yo neck, yall sapien velizzle, yo mamma volutpizzle, suscipizzle quis, gravida vizzle, arcu. Pellentesque uhuh ... yih! tortizzle. Sed own yo'. Tellivizzle bizzle bizzle dapibizzle turpis tempizzle we gonna chung. Fo shizzle we gonna chung shit et turpis. Yo mamma izzle tortor. Pellentesque rhoncizzle nisi. In boofron habitasse crunk dictumst. Bow wow wow dapibizzle. Curabitizzle ghetto rizzle, pretizzle break yo neck, yall, for sure izzle, yo mamma mammasay mammasa mamma oo sa, dang. You son of a bizzle suscipizzle. Fo shizzle mah nizzle fo rizzle, mah home g-dizzle semper pot sizzle da bomb.</p>
+                    <p>My money's in that office, right? If she start giving me some <span class="change">bullshit</span> about it ain't there, and we got to go someplace else and get it, I'm gonna shoot you in the head then and there. Then I'm gonna shoot that <span class="change">bitch</span> in the kneecaps, find out where my <span class="change">goddamn</span> money is. She gonna tell me too. Hey, look at me when I'm talking to you, <span class="change">motherfucker</span>.</p>
+                <div class="kitten">
+                    <img src="img/kitten.jpg">
+                </div>
+                <div class="kitten">
+                </div>
+                <div class="clear"></div>
+                <footer>
+                    <p>Owned brizzle yippiyo quizzle nisi phat away.</p>
+                </footer>
+            </article>
+        </main>
+        <!--js altijd plaatsen voor het sluiten van de body-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+        <script>
+
+            //Plugin
+            $(function(){
+            $("#accordion").accordion();
+            });
+ 
+            // 1. selector
+            // 2. functie
+            // 3. opties
+            var fontColor = '#000';
+            var fontStyle = 'Comic Sans MS';
+
+            $( document ).ready(function() {
+                
+                $('#blackHeading').click(function(){
+                    $('h2').css({
+                        'color':fontColor
+                    });
+                });
+
+                $('#comicSans').click(function(){
+                    $('body').css({
+                        'font-family':fontStyle
+                    });
+                });
+
+                $('#beep').click(function(){
+                    $('.change').text("*beep*");
+                });
+            });
+            
+        </script>
+    </body>
+</html>
